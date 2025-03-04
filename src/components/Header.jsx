@@ -16,32 +16,42 @@ function redirectToShows() {
 export default function Header() {
   return (
     <div>
-        <header className='flex justify-between items-center'>
-            <div onClick={() => {redirectToHome()}} className='border-2 rounded-2xl p-2 flex items-center text-center gap-2 cursor-pointer
+    <header className='flex flex-col md:flex-row justify-between items-center gap-4 p-4'>
+        <div 
+            onClick={() => {redirectToHome()}} 
+            className='border-2 rounded-2xl p-2 flex items-center text-center gap-2 cursor-pointer
             hover:bg-white hover:text-black transition'>
-                <img width={40} height={40} src='/src/assets/cookie-icon.svg'></img>
-                <h1 className='text-4xl'>CookieHub</h1>
-            </div>
-            <div className='flex justify-center items-center gap-4'>
-                <button onClick={() => {redirectToSearch()}} className='border-2 rounded-2xl p-2 flex items-center text-center gap-2 cursor-pointer
+            <img width={40} height={40} src='/src/assets/cookie-icon.svg'></img>
+            <h1 className='text-4xl'>CookieHub</h1>
+        </div>
+        
+        <div className='flex flex-wrap justify-center items-center gap-4'>
+            <button 
+                onClick={() => {redirectToSearch()}} 
+                className='border-2 rounded-2xl p-2 flex items-center text-center gap-2 cursor-pointer
                 hover:bg-white hover:text-black transition'>
-                    <Search/>
-                    <h1>Search</h1>
-                </button>
+                <Search/>
+                <h1>Search</h1>
+            </button>
 
-                <button onClick={() => {redirectToHome()}} className='border-2 rounded-2xl p-2 flex items-center text-center gap-2 cursor-pointer
+            <button 
+                onClick={() => {redirectToHome()}} 
+                className='border-2 rounded-2xl p-2 flex items-center text-center gap-2 cursor-pointer
                 hover:bg-white hover:text-black transition'>
-                    <Play/>
-                    <h1>Movies</h1>
-                </button>
+                <Play/>
+                <h1>Movies</h1>
+            </button>
 
-                <button onClick={() => {redirectToShows()}} className='border-2 rounded-2xl p-2 flex items-center text-center gap-2 cursor-pointer
+            <button 
+                onClick={() => {redirectToShows()}} 
+                className='border-2 rounded-2xl p-2 flex items-center text-center gap-2 cursor-pointer
                 hover:bg-white hover:text-black transition'>
-                    <Tv/>
-                    <h1>TV Shows</h1>
-                </button>
-            </div>
-        </header>
+                <Tv/>
+                <h1>TV Shows</h1>
+            </button>
+        </div>
+    </header>
+
         <hr className='mt-5 mb-5' />
     </div>
   )

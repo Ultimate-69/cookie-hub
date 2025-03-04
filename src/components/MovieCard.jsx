@@ -2,8 +2,13 @@ import { Star } from 'lucide-react'
 import React from 'react'
 
 export default function MovieCard( {movie} ) {
+
+    function redirectToMovie() {
+        window.location.href = `/movie/${movie.id}`
+    }
+
   return (
-    <div className='bg-[#3d3c3b] border-2 rounded-lg p-1 cursor-pointer hover:opacity-80 transition'>
+    <div onClick={() => {redirectToMovie()}} className='bg-[#3d3c3b] border-2 rounded-lg p-1 cursor-pointer hover:opacity-80 transition'>
         <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} />
         <h1 className='text-lg font-bold text-center p-5'>{movie.title}</h1>
         <div className='p-2 pt-0 flex justify-center gap-3'>
