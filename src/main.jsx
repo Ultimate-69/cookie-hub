@@ -4,6 +4,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import HomePage from './routes/HomePage.jsx'
 import Header from './components/Header.jsx'
+import Shows from './routes/Shows.jsx'
 
 const router = createBrowserRouter([
   {
@@ -17,11 +18,15 @@ const router = createBrowserRouter([
   },
   {
     path: '/shows',
-    element: <div>Shows</div>
+    element: <Shows/>
   },
   {
     path: '/movie/:movieId',
     element: <div>Movie</div>
+  },
+  {
+    path: '/show/:showId',
+    element: <div>Show</div>
   }
 ]);
 
