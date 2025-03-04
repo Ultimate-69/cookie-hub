@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Oval } from "react-loader-spinner";
 import MovieCard from "./MovieCard";
-import { Clapperboard } from "lucide-react";
+import { Clapperboard, Star } from "lucide-react";
 
 export default function Trending() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -54,7 +54,7 @@ export default function Trending() {
               <div className="absolute inset-0 bg-black/50"></div>
               <div className="relative z-10 max-w-2xl px-8 text-white">
                 <h2 className="text-5xl font-bold">{movies[0].title}</h2>
-                <h3 className="mt-3 ml-3 flex gap-2"> <Clapperboard/> {`${movies[0].vote_average} (${movies[0].vote_count}) • ${getYearFromDate(movies[0].release_date)}`}</h3>
+                <h3 className="mt-3 ml-3 flex gap-2"> <Star/> {`${movies[0].vote_average} (${movies[0].vote_count}) • ${getYearFromDate(movies[0].release_date)}`}</h3>
                 <p className="mt-2 text-lg text-gray-300 line-clamp-3">
                   {movies[0].overview}
                 </p>

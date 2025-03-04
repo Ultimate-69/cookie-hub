@@ -13,13 +13,13 @@ export default function MovieCard( {movie} ) {
         <h1 className='text-lg font-bold text-center p-5'>{movie.title}</h1>
         <div className='p-2 pt-0 flex justify-center gap-3'>
             {movie.original_language.toUpperCase() + ' '}
-             - 
+             | 
              <div className='flex gap-2'>
                 <Star/>
                 {movie.vote_average}
              </div> 
-             -
-             {' ' + movie.release_date}
+             |
+             {' ' + movie.release_date.split('-')[0]}
         </div>
     </div>
   )
