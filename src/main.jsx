@@ -8,11 +8,16 @@ import Header from './components/Header.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <HomePage/>
+    element: <HomePage/>,
+    errorElement: <div className='text-3xl'>404 Not Found</div>
   },
   {
     path: '/search',
     element: <div>Search</div>
+  },
+  {
+    path: '/shows',
+    element: <div>Shows</div>
   }
 ]);
 
