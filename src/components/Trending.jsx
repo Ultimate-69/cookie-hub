@@ -35,7 +35,7 @@ export default function Trending() {
     <div className='flex justify-center items-center flex-col'>
         <h1 className='mb-5 text-4xl font-bold'>Trending Movies</h1>
         {isLoaded ?
-         <div className='flex flex-wrap justify-center items-center'>
+         <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3'>
             {movies.map((movie) => (
                 <div key={movie.id}>
                     <MovieCard movie={movie} />
