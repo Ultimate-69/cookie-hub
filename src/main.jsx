@@ -9,6 +9,10 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <HomePage/>
+  },
+  {
+    path: '/search',
+    element: <div>Search</div>
   }
 ]);
 

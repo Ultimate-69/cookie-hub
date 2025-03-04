@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Header from '../components/Header'
+import Trending from '../components/Trending'
 
 export default function HomePage() {
 
@@ -9,7 +9,7 @@ export default function HomePage() {
 
   return (
     <div>
-
+        <Trending/>
     </div>
   )
 }
