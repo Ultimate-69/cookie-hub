@@ -1,5 +1,6 @@
 import { Star } from 'lucide-react'
 import React from 'react'
+import noMovie from '../assets/no-movie.png'
 
 export default function MovieCard( {movie} ) {
 
@@ -9,7 +10,7 @@ export default function MovieCard( {movie} ) {
 
   return (
     <div onClick={() => {redirectToMovie()}} className='bg-[#3d3c3b] border-2 rounded-lg p-1 cursor-pointer hover:opacity-80 transition'>
-        <img src={movie.poster_path ? `https://image.tmdb.org/t/p/original/${movie.poster_path}` : require('../assets/no-movie.png')} />
+        <img src={movie.poster_path ? `https://image.tmdb.org/t/p/original/${movie.poster_path}` : noMovie} />
         <h1 className='text-lg font-bold text-center p-5'>{movie.title}</h1>
         <div className='p-2 pt-0 flex justify-center gap-3'>
             {movie.original_language.toUpperCase() + ' '}
