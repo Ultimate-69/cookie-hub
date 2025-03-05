@@ -6,6 +6,7 @@ import HomePage from './routes/HomePage.jsx'
 import Header from './components/Header.jsx'
 import Shows from './routes/Shows.jsx'
 import Search from './routes/Search.jsx'
+import MoviePage from './routes/MoviePage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/movie/:movieId',
-    element: <div>Movie</div>
+    element: <MoviePage/>
   },
   {
     path: '/show/:showId',
