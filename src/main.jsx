@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import HomePage from './routes/HomePage.jsx'
 import Header from './components/Header.jsx'
 import Shows from './routes/Shows.jsx'
+import Search from './routes/Search.jsx'
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/search',
-    element: <div>Search</div>
+    element: <Search/>
   },
   {
     path: '/shows',
