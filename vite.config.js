@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "https://ultimate-69.github.io/cookie-hub/"
+  base: "/cookie-hub/"
 })

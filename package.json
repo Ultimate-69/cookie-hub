@@ -1,5 +1,6 @@
 {
   "name": "cookie-hub",
+  "homepage": "https://Ultimate-69.github.io/cookie-hub/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,11 +8,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.9",
     "dotenv": "^16.4.7",
+    "ghpages": "^0.0.10",
     "lucide-react": "^0.477.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
