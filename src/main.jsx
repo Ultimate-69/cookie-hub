@@ -7,6 +7,7 @@ import Header from './components/Header.jsx'
 import Shows from './routes/Shows.jsx'
 import Search from './routes/Search.jsx'
 import MoviePage from './routes/MoviePage.jsx'
+import ShowPage from './routes/ShowPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/show/:showId',
-    element: <div>Show</div>
+    element: <ShowPage/>
   }
 ]);
 
