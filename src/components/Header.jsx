@@ -21,7 +21,7 @@ export default function Header() {
             onClick={() => {redirectToHome()}} 
             className='border-2 rounded-2xl p-2 flex items-center text-center gap-2 cursor-pointer
             hover:bg-white hover:text-black transition'>
-            <img width={40} height={40} src='/src/assets/cookie-icon.svg'></img>
+            <img width={40} height={40} src='../assets/cookie-icon.svg'></img>
             <h1 className='text-4xl'>CookieHub</h1>
         </div>
         

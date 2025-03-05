@@ -11,24 +11,24 @@ import ShowPage from './routes/ShowPage.jsx'
 
 const router = createBrowserRouter([
   {
-    path: 'https://ultimate-69.github.io/cookie-hub/',
+    path: '/',
     element: <HomePage/>,
     errorElement: <div className='text-3xl'>404 Not Found</div>
   },
   {
-    path: 'https://ultimate-69.github.io/cookie-hub/search',
+    path: '/search',
     element: <Search/>
   },
   {
-    path: 'https://ultimate-69.github.io/cookie-hub/shows',
+    path: 'shows',
     element: <Shows/>
   },
   {
-    path: 'https://ultimate-69.github.io/cookie-hub/movie/:movieId',
+    path: '/movie/:movieId',
     element: <MoviePage/>
   },
   {
-    path: 'https://ultimate-69.github.io/cookie-hub/show/:showId',
+    path: '/show/:showId',
     element: <ShowPage/>
   }
 ]);
